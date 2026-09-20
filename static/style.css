@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #171717;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.new-chat {
+    border: 1px solid #dddddd;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 70px 20px 30px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #777;
+    font-size: 17px;
+}
+
+.chat-box {
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.messages {
+    min-height: 350px;
+    padding: 35px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.welcome-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.welcome h2 {
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #888;
+}
+
+.input-area {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+    font-family: inherit;
+}
+
+#sendButton {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.tools {
+    display: flex;
+    gap: 8px;
+    padding: 0 15px 15px;
+}
+
+.tools button {
+    border: 1px solid #e5e5e5;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding-top: 45px;
+    }
+
+    .tools {
+        overflow-x: auto;
+    }
+  }
