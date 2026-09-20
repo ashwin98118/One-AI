@@ -1,17 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>One AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <h1>Welcome to One AI</h1>
+    <header class="navbar">
 
-    <p>Your all-in-one AI assistant.</p>
+        <div class="logo">
+            One AI
+        </div>
+
+        <button class="new-chat" onclick="newChat()">
+            + New Chat
+        </button>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+
+            <h1>
+                What can I help you with?
+            </h1>
+
+            <p>
+                One AI — one place for everything AI.
+            </p>
+
+        </section>
+
+
+        <section class="chat-box">
+
+            <div id="messages" class="messages">
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        ✦
+                    </div>
+
+                    <h2>
+                        Welcome to One AI
+                    </h2>
+
+                    <p>
+                        Ask me anything.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <textarea
+                    id="userInput"
+                    placeholder="Ask One AI anything..."
+                    rows="1">
+                </textarea>
+
+                <button
+                    id="sendButton"
+                    onclick="sendMessage()">
+                    ↑
+                </button>
+
+            </div>
+
+
+            <div class="tools">
+
+                <button>
+                    🖼️ Image
+                </button>
+
+                <button>
+                    ✏️ Edit
+                </button>
+
+                <button>
+                    📚 Study
+                </button>
+
+                <button>
+                    🌐 Web
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        One AI • Your all-in-one AI assistant
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
+
 </html>
